@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>DisasterPrep101</title>
+    <link rel="stylesheet" href="Css/past-activities.css">
+</head>
+
+<header>
+    <nav class="navbar">
+        <div class="club-title-container">
+            <div class="club-title">DisasterPrep101 Club</div>
+        </div>
+        <button class="dropdown-btn" onclick="toggleDropdown()"><img src="Picture/menu.png"></button>
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./about-us.html">About Us</a>
+            <a href="./past-activities.html">Past Activities</a>
+            <a href="./join-us.html">Join Us</a>
+            <a href="./contact-us.html">Contact Us</a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="main-content">
+        <h3>Past Activities</h3>
+        <div class="msg-container">
+            <div class="msg-text">
+                <p>At DisasterPrep101 Club, we hold a variety of activities aimed at fostering a culture of preparedness
+                    and resilience. Here are some of our past activities:</p>
+            </div>
+        </div>
+
+        <div class="activity-container">
+
+            <div class="activity">
+                <h3 class="no-border"><span class="header-border">Activity 1:<br>Discussing realistic portrayals of
+                        disaster in
+                        media</span></h3>
+
+                <div class="activity-image-container">
+                    <img class="activity-image" src="./Picture/step1-3 before 1.png"
+                        onmouseover="this.src='./Picture/step1-3 after bw.png'"
+                        onmouseout="this.src='./Picture/step1-3 before 1.png'" alt="Activity 1">
+                </div>
+
+                <p>This activity involved a detailed analysis and discussion of how disasters are portrayed in different
+                    media, including novels, movies, and anime broadcasts. We examined the accuracy of these portrayals
+                    in reflecting real-life contexts.</p>
+            </div>
+
+            <div class="activity">
+                <h3 class="no-border"><span class="header-border">Activity 2:<br>2011 Japan Earthquake and
+                        Tsunami</span></h3>
+
+                <div class="activity-image-container">
+                    <img class="activity-image" src="./Picture/jp before.jpg"
+                        onmouseover="this.src='./Picture/jp after.jpg'" onmouseout="this.src='./Picture/jp before.jpg'"
+                        alt="Activity 2">
+                </div>
+
+                <p>This activity centered around an in-depth examination of the significant disaster of the 2011 Japan
+                    Earthquake and Tsunami. We discussed its impacts, the response efforts, and the lessons learned from
+                    this event.</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript">
+    function toggleDropdown() {
+        var navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("show-dropdown");
+    }
+</script>
+
+<footer>
+    DisasterPrep101 Club &copy; 2023 | All Rights Reserved
+</footer>
+
+</html>

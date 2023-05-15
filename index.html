@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>DisasterPrep101</title>
+    <link rel="stylesheet" href="Css/index.css">
+
+</head>
+
+<header>
+    <nav class="navbar">
+        <div class="club-title-container">
+            <div class="club-title">DisasterPrep101 Club</div>
+        </div>
+        <button class="dropdown-btn" onclick="toggleDropdown()"><img src="Picture/menu.png"></button>
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./about-us.html">About Us</a>
+            <a href="./past-activities.html">Past Activities</a>
+            <a href="./join-us.html">Join Us</a>
+            <a href="./contact-us.html">Contact Us</a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="main-content">
+        <div class="intro-image">
+            <div class="intro-message-container">
+                <div class="intro-message">Welcome</div>
+            </div>
+            <div class="background-image"></div>
+        </div>
+
+
+
+        <div class="chatbox">
+            <div class="col-1">
+                <h3>Chat</h3>
+                <div class="msg-container">
+                    <div class="msg-row">
+                        <img src="Picture/man2.png" class="msg-img"></img>
+                        <div class="msg-text">
+                            <p>Do you want to know more about geography knowledge, like the mechanism of natural
+                                disaster?</p>
+                        </div>
+
+                    </div>
+
+                    <div class="msg-row msg-row2">
+
+                        <div class="msg-text">
+                            <p>Yes, I'm interested!</p>
+                        </div>
+                    </div>
+
+                    <div class="msg-row msg-row3">
+                        <img src="Picture/man2.png" class="msg-img"></img>
+                        <div class="msg-text">
+                            <p>Join us!!!</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-container">
+                        <input type="text" class="message-input" id="message_box"
+                            placeholder="Type your message here...">
+                        <button type="submit" class="submit-button" id="submit_button" onclick="showAlert()"><img
+                                src="Picture/send.png"></button>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div class="col-2">
+                <h3>Friend List</h3>
+                <ul>
+                    <li class="online">John Austin</li>
+                    <li class="offline">Dwayne T</li>
+                    <li class="busy">Rey Mysterio</li>
+                    <li class="online">Seth Rollins</li>
+                    <li class="busy">Roman Reigns</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript">
+    function showAlert() {
+        alert("Interested in joining us? \nClick the \"Form Submission\" to fill out our membership form.\n\n"+
+        "Have questions? \nClick \"Contact Us\" for our contact information.");
+    }
+    function toggleDropdown() {
+        var navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("show-dropdown");
+    }
+</script>
+
+<footer>
+    DisasterPrep101 Club &copy; 2023 | All Rights Reserved
+</footer>
+
+</html>

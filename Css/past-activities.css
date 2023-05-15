@@ -1,0 +1,260 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+p { 
+    color: #666;
+}
+
+
+
+body {
+    background-color: #ECE5DD;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.club-title {
+    font-size: 24px;
+    color: #fff;
+    z-index: 101;
+}
+
+.dropdown-btn {
+    display: none;
+    background-color: #767373;
+    border: none;
+    color: #fff;
+    padding: 5px 7px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.dropdown-btn img {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.dropdown-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-content {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    border-bottom: 2px solid #4D4D4D;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+h3.no-border {
+    border: none;
+    font-family: 'Georgia', serif;
+    font-size: 1em;
+    color: rgb(51, 51, 51);
+    padding: 10px 0 0;
+
+    background-color: rgb(240, 240, 240, 0.3);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.msg-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+
+}
+
+.activity-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+
+}
+
+.activity {
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.activity-image-container {
+    width: 90%;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+}
+
+.activity-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.activity-image-container:hover img {
+    transform: scale(0.98);
+}
+
+
+.activity:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.activity p {
+    font-size: 15px;
+    padding: 10px 25px 20px;
+}
+
+.header-border {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 2px solid #333;
+    padding: 0 15px;
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        padding: 55px 0 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navbar a {
+        margin-bottom: 10px;
+    }
+
+    .club-title-container {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .club-title {
+        font-size: 26px;
+        position: static;
+        display: inline-block;
+    }
+
+    .dropdown-btn {
+        position: absolute;
+        left: 10px;
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar.show-dropdown .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        top: 100%;
+        z-index: 102;
+    }
+
+    .main-content {
+        padding: 30px;
+    }
+
+
+    .activity-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .activity {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        position: static;
+    }
+}
+

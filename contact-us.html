@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>DisasterPrep101</title>
+    <link rel="stylesheet" href="Css/contact-us.css">
+    
+
+</head>
+
+<header>
+    <nav class="navbar">
+        <div class="club-title-container">
+            <div class="club-title">DisasterPrep101 Club</div>
+        </div>
+        <button class="dropdown-btn" onclick="toggleDropdown()"><img src="Picture/menu.png"></button>
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./about-us.html">About Us</a>
+            <a href="./past-activities.html">Past Activities</a>
+            <a href="./join-us.html">Join Us</a>
+            <a href="./contact-us.html">Contact Us</a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="main-content">
+        <h3>Contact Us</h3>
+        <div class="msg-container">
+            <div class="location-info">
+                <h3 class="no-border">DisasterPrep101 Club</h3>
+                <p>
+                    Address:<br> No.1, Wellington Street, Central District, Hong Kong<br><br>
+                    Phone:<br> +852 1234 5678<br><br>
+                    Operating Hours:<br> Monday - Friday, 9:00 AM - 5:00 PM<br><br>
+                    Holidays:<br> Closed on all Hong Kong Public Holidays
+                </p>
+            </div>
+            <div class="location-map">
+                <iframe src="https://maps.google.com/maps?q=No.1, Wellington Street, Central District, Hong Kon&amp;output=embed" width="400"
+                    height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/DisasterPrep101" target="_blank">
+                <img src="./Picture/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://twitter.com/DisasterPrep101" target="_blank">
+                <img src="./Picture/twitter.png" alt="Twitter" />
+            </a>
+        </div>
+
+
+    </div>
+
+</body>
+<script type="text/javascript">
+    function toggleDropdown() {
+        var navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("show-dropdown");
+    }
+</script>
+
+<footer>
+    DisasterPrep101 Club &copy; 2023 | All Rights Reserved
+</footer>
+
+</html>

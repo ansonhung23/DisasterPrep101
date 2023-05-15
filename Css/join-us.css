@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+p { 
+    color: #666;
+}
+
+body {
+    background-color: #ECE5DD;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.club-title {
+    font-size: 24px;
+    color: #fff;
+    z-index: 101;
+}
+
+.dropdown-btn {
+    display: none;
+    background-color: #767373;
+    border: none;
+    color: #fff;
+    padding: 5px 7px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.dropdown-btn img {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}
+
+.dropdown-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-content {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    border-bottom: 2px solid #4D4D4D;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.msg-container1 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+
+}
+
+.msg-container2 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+input[type="reset"]:hover {
+    background-color: #e57373;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+@media only screen and (max-width: 850px) {
+    body {
+        padding: 55px 0 0;
+    }
+
+    .navbar {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        padding-top: 13px;
+        justify-content: space-between;
+        padding-bottom: 13px;
+
+    }
+
+    .navbar a {
+        margin-bottom: 10px;
+    }
+
+    .club-title-container {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .club-title {
+        font-size: 26px;
+        position: static;
+        display: inline-block;
+    }
+
+    .dropdown-btn {
+
+        position: absolute;
+        left: 10px;
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .navbar.show-dropdown .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        top: 100%;
+        z-index: 102;
+    }
+
+    .main-content {
+        padding: 30px;
+    }
+
+    label,
+    .button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        margin-bottom: 25px;
+    }
+
+    footer {
+        position: static;
+    }
+}

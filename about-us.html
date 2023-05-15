@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>DisasterPrep101</title>
+    <link rel="stylesheet" href="Css/about-us.css">
+
+</head>
+
+<header>
+    <nav class="navbar">
+        <div class="club-title-container">
+            <div class="club-title">DisasterPrep101 Club</div>
+        </div>
+        <button class="dropdown-btn" onclick="toggleDropdown()"><img src="Picture/menu.png"></button>
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./about-us.html">About Us</a>
+            <a href="./past-activities.html">Past Activities</a>
+            <a href="./join-us.html">Join Us</a>
+            <a href="./contact-us.html">Contact Us</a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="main-content">
+        <h3>About Us</h3>
+        <div class="msg-container">
+            <div class="msg-text">
+                <p>Welcome to the DisasterPrep101 Club! We are a group of individuals who are dedicated to preparing for
+                    and
+                    responding to disasters of all kinds. <br> <br> Our mission is to educate and empower our members
+                    and the
+                    community on
+                    disaster preparedness and response. We believe that by working together, we can make our communities
+                    safer
+                    and more resilient in the face of disaster.</p>
+            </div>
+        </div>
+
+        <h3>Our Team</h3>
+        <div class="msg-container">
+            <div class="msg-text">
+                <p>Our team is made up of passionate and experienced individuals who bring a wide range of skills and
+                    knowledge
+                    to the club. We are always looking for new members to join us and contribute to our mission!</p>
+                <p class="click-instruction"><---&nbsp;&nbsp;Click on each title to see more details&nbsp;&nbsp;---></p>
+                <div class="team-container">
+                    <table>
+                        <tr>
+                            <th onclick="toggleDetails('leadership-team')">
+                                <h3 class="no-border">
+                                    <span class="header-border">Leadership Team</span>
+                                </h3>
+                            </th>
+                            <td id="leadership-team">
+                                <p><span class="role">President</span><span class="name">John Smith</span></p>
+                                <p><span class="role">Vice President</span><span class="name">Jane Doe</span></p>
+                                <p><span class="role">Secretary</span><span class="name">Bob Johnson</span></p>
+                                <p><span class="role">Treasurer</span><span class="name">Samantha Lee</span></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th onclick="toggleDetails('committee-members')">
+                                <h3 class="no-border">
+                                    <span class="header-border">Committee Members</span>
+                                </h3>
+                            </th>
+                            <td id="committee-members">
+                                <p><span class="role">Communications</span><span class="name">Mark Davis</span></p>
+                                <p><span class="role">Outreach</span><span class="name">Sarah Kim</span></p>
+                                <p><span class="role">Training</span><span class="name">David Brown</span></p>
+                                <p><span class="role">Fundraising</span><span class="name">Amy Chen</span></p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <h3>Our History</h3>
+        <div class="msg-container">
+            <div class="msg-text">
+                <p>The DisasterPrep101 Club was founded in 2010 by a group of local residents who saw a need for a
+                    community-based approach to disaster preparedness and response. Since then, we have grown to become
+                    one of
+                    the largest and most active disaster preparedness organizations in the region. We have conducted
+                    numerous
+                    training sessions, emergency drills, and community outreach events over the years, and we continue
+                    to expand
+                    our efforts to reach more people and make our communities safer and more resilient.</p>
+            </div>
+        </div>
+
+        <h3>Get Involved</h3>
+        <div class="msg-container">
+            <div class="msg-text">
+                <p>If you are interested in joining the DisasterPrep101 Club or learning more about our mission and
+                    activities, please visit our <a class="link" href="./join-us.html">Join Us</a> page or <a
+                        class="link" href="./contact-us.html">Contact Us</a> page for more information.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script type="text/javascript">
+    function toggleDropdown() {
+        var navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("show-dropdown");
+    }
+
+    function toggleDetails(id) {
+        if (window.innerWidth <= 850) {
+            var section = document.getElementById(id);
+            var parentRow = section.parentElement;
+            parentRow.classList.toggle("open");
+        }
+    }
+
+</script>
+
+<footer>
+    DisasterPrep101 Club &copy; 2023 | All Rights Reserved
+</footer>
+
+</html>
