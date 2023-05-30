@@ -2,7 +2,9 @@
 
 ## Introduction
 
-Welcome to the GitHub repository for the DisasterPrep101 Club Website. This project represents my first endeavor into building a website from scratch, using HTML, CSS, and JavaScript. This website has responsive layout function, which could be viewed user-friendly in both PC and mobile.
+Welcome to the GitHub repository for the DisasterPrep101 Club Website. This project represents my first endeavor into building a website from scratch, using HTML, CSS, and JavaScript. 
+
+This website has responsive layout function, which could be viewed user-friendly in both PC and mobile.
 
 Please note that the "DisasterPrep101 Club" is a fictional entity and all the external links and the contact information provided are purely fictitious. 
 
