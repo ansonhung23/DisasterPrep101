@@ -102,7 +102,7 @@ body {
 .background-image {
     width: 55%;
     height: 100%;
-    background-image: url("../../Picture/background.jpg");
+    background-image: url("../Picture/background.jpg");
     background-size: cover;
     background-position: right center;
     background-position: center;
